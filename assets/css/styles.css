@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #171100;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", "sans-serif";
+  font-size: 1.6rem;
+}
+
+/* ========== Common ========== */
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 18px 21px;
+  min-width: 118px;
+  background-color: var(--primary-color);
+  border-radius: 999px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ==========header========= */
+.fixed-header {
+  padding-top: 36px;
+  background-color: #fffcf4;
+}
+
+.fixed-header .navbar {
+  display: flex;
+  align-items: center;
+}
+
+.fixed-header .logo {
+  margin-right: auto;
+  color: #171100;
+  font-family: Sen;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.42; /* 141.667% */
+}
+
+.fixed-header ul {
+  display: flex;
+  margin-right: 70px;
+}
+
+.fixed-header ul a {
+  padding: 8px 21px;
+  text-decoration: none;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
+}
+
+.fixed-header ul li:first-child a {
+  position: relative;
+  color: #171100;
+  font-weight: 600;
+}
+
+.fixed-header ul li:first-child a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: #171100;
+  bottom: 6px;
+  left: 22px;
+}
+
+.fixed-header .action-btn {
+  min-width: 144px;
+}
